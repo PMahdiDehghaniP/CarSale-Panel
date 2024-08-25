@@ -1,4 +1,5 @@
 import Grid from "@mui/material/Unstable_Grid2";
+import { grey } from "@mui/material/colors";
 const SideBarContainer = ({ children }) => {
   return (
     <Grid
@@ -7,10 +8,15 @@ const SideBarContainer = ({ children }) => {
       md={3}
       xl={2}
       lg={2}
-      bgcolor={"black"}
+      bgcolor={grey[900]}
       sx={{
+        borderRadius: 2,
+        overflowY: "auto",
         overflowX: "hidden",
-        borderRadius:2
+        height: "100vh",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
       }}
     >
       {children}

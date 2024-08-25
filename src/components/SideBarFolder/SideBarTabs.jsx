@@ -14,6 +14,8 @@ const SideBarTabs = () => {
       <Tabs
         orientation="vertical"
         variant="scrollable"
+        scrollbutton="auto"
+        allowScrollButtonsMobile
         sx={{
           width: "100%",
         }}
@@ -28,9 +30,11 @@ const SideBarTabs = () => {
               backgroundColor: "purple",
               my: 2,
               mx: 3,
+              fontSize: "19px",
               borderRadius: 2,
               textAlign: "center",
-              height:60
+              width:220,
+              height: 60,
             }}
           />
         ))}

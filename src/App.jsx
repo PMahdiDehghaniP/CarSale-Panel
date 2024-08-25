@@ -7,6 +7,7 @@ import { projectContext } from "./Context/ProjectContext";
 import { useState } from "react";
 import { tabsData } from "./data/TabsData";
 import { PageControler } from "./components/Page";
+import SwipeableViews from "react-swipeable-views";
 const App = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const handlePageNumberChange = (event, newPageNumber) => {
@@ -17,11 +18,16 @@ const App = () => {
       <projectContext.Provider value={{ pageNumber, handlePageNumberChange }}>
         <MainLayout>
           <PagesContainer>
-            {tabsData.map((tabData) => (
-              <PageControler key={tabData.index} index={tabData.index}>
-                {tabData.component}
-              </PageControler>
-            ))}
+            <SwipeableViews
+              index={pageNumber}
+              onChangeIndex={handlePageNumberChange}
+            >
+              {tabsData.map((tabData) => (
+                <PageControler key={tabData.index} index={tabData.index}>
+                  {tabData.component}
+                </PageControler>
+              ))}
+            </SwipeableViews>
           </PagesContainer>
           <SideBarContainer>
             <SideBar />
