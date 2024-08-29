@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "B Yagut";
+  src: url("../fonts/BYagut.eot");
+  src: url("../fonts/BYagut?#iefix") format("embedded-opentype"),
+    url("../fonts/BYagut.woff2") format("woff2"),
+    url("../fonts/BYagut.woff") format("woff"),
+    url("../fonts/BYagut.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.MuiCard-root::-webkit-scrollbar {
+  display: none;
+}
