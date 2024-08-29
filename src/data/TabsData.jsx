@@ -2,7 +2,6 @@ import {
   MainPage,
   ProductsPage,
   TermsOfSale,
-  News,
   ContactUs,
 } from "../components/Page";
 
@@ -23,13 +22,8 @@ export const tabsData = [
     component: <TermsOfSale pageTitle={"شرایط فروش"} />,
   },
   {
-    name: "اخبار خودرو",
-    index: 3,
-    component: <News pageTitle={"اخبار خودرو"} />,
-  },
-  {
     name: "تماس با ما",
-    index: 4,
+    index: 3,
     component: <ContactUs pageTitle={"تماس با ما"} />,
   },
 ];

@@ -4,10 +4,10 @@ export const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#023E8A",
+      main: "#C70039",
     },
     secondary: {
-      main: "#7209b7",
+      main: "#60d394",
     },
     error: {
       main: "#ef233c",
@@ -18,5 +18,14 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: '"B Yagut", "Helvetica", "Arial", sans-serif',
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 740,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
   },
 });

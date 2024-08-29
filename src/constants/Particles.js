@@ -4,20 +4,20 @@ export const carSaleParticles = {
       value: 50, 
     },
     color: {
-      value: "#ffffff", 
+      value: "#C70039", 
     },
     shape: {
       type: "circle",
     },
     opacity: {
-      value: 0.3, 
+      value: 0.7, 
     },
     size: {
-      value: { min: 2, max: 4 }, 
+      value: { min: 2, max: 6 }, 
     },
     move: {
       enable: true,
-      speed: 1.25,
+      speed: 1.35,
       direction: "none",
       outModes: {
         default: "out",

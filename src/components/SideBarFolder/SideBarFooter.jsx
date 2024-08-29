@@ -4,19 +4,28 @@ const SideBarFooter = () => {
     <>
       <Box
         display="flex"
-        flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        sx={{ my: 2 }}
+        flexDirection="column"
+        width="100%"
+        sx={{ mt: 2,mb:2 }}
       >
-        <Typography sx={{ color: "whitesmoke" }}>
-          طراحی شده برای خرید خودرو
-        </Typography>
-        <Typography sx={{ color: "whitesmoke" }}>
-          تمامی حقوق متعلق به
-          <br />
-          &copy; شرکت سازنده است
-        </Typography>
+        <Box border="2px solid #60d394" width="80%" borderRadius={6} sx={{paddingY:1}}>
+          <Typography
+            sx={{ color: "whitesmoke", lineHeight: 2 }}
+            textAlign="center"
+          >
+            طراحی شده برای خرید خودرو
+          </Typography>
+          <Typography
+            sx={{ color: "whitesmoke", lineHeight: 2 }}
+            textAlign="center"
+          >
+            تمامی حقوق متعلق به
+            <br />
+            &copy; شرکت سازنده است
+          </Typography>
+        </Box>
       </Box>
     </>
   );

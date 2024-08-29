@@ -1,5 +1,4 @@
 import { Avatar, Typography, Box } from "@mui/material";
-import DashboardCustomizeRoundedIcon from "@mui/icons-material/DashboardCustomizeRounded";
 const SideBarHeader = () => {
   return (
     <>
@@ -13,19 +12,27 @@ const SideBarHeader = () => {
       >
         <Avatar
           sx={{
-            width: 55,
-            height: 55,
-            bgcolor: "success.main",
+            width: 100,
+            height: 100,
+            bgcolor: "#f4d58d",
             margin: "0 auto",
           }}
         >
-          <DashboardCustomizeRoundedIcon />
+          <img
+            src="https://ringo.ir/mag/wp-content/uploads/2022/11/Jac-J7-1.jpg"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+          />
         </Avatar>
         <Typography
           variant="h6"
           sx={{ color: "primary.main", fontWeight: 500, marginTop: 1.1 }}
         >
-          پنل مدیریت
+          سامانه خرید و فروش خودرو
         </Typography>
       </Box>
     </>

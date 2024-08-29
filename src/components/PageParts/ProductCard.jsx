@@ -6,6 +6,7 @@ const ProductCard = ({ product }) => {
       sx={{
         width: "80%",
         margin: "10px auto",
+        height: "auto",
         borderRadius: 2,
         boxShadow: 3,
         textAlign: "center",

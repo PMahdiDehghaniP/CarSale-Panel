@@ -50,51 +50,40 @@ const MainPage = ({ pageTitle }) => {
         display="flex"
         flexDirection="column"
         alignItems="center"
+        width="100%"
+        height="100vh"
         sx={{
-          height: "100vh",
           overflow: "hidden",
+          borderRadius: 2.5,
+          backgroundImage: `url(${Background})`,
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <Box
-          display="flex"
-          justifyContent="space-around"
-          alignItems="center"
-          sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6 }, mt: 1 }}
-        >
-          <Typography
-            ref={MainPageEl}
-            textAlign="center"
-            variant="h5"
-            sx={{
-              fontSize: "25px",
-              color: "whitesmoke",
-              mb: 2,
-              mt: 0.5,
-              fontWeight: 600,
-            }}
-          ></Typography>
-        </Box>
-
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={carSaleParticles}
+        />
+        <Typography
+          ref={MainPageEl}
+          textAlign="center"
+          variant="h4"
+          sx={{
+            color: "whitesmoke",
+            mb: 2,
+            mt: 1,
+          }}
+        ></Typography>
         <Box
           display="flex"
           justifyContent="center"
           alignItems="center"
-          sx={{
-            borderRadius: 2.5,
-            width: "100%",
-            height: "600px",
-            backgroundImage: `url(${Background})`,
-            backgroundPosition: "center center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
+          width="100%"
+          height="100vh"
         >
-          <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={carSaleParticles}
-          />
           <Typography
             textAlign="center"
             ref={DescEl}

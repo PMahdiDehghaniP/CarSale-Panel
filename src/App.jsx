@@ -8,15 +8,28 @@ import { useState } from "react";
 import { tabsData } from "./data/TabsData";
 import { PageControler } from "./components/Page";
 import SwipeableViews from "react-swipeable-views";
+import DrawerButton from "./components/Drawer/DrawerButton";
 const App = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [pageNumber, setPageNumber] = useState(0);
   const handlePageNumberChange = (event, newPageNumber) => {
     setPageNumber(newPageNumber);
   };
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
   return (
     <>
-      <projectContext.Provider value={{ pageNumber, handlePageNumberChange }}>
+      <projectContext.Provider
+        value={{
+          pageNumber,
+          handlePageNumberChange,
+          drawerOpen,
+          setDrawerOpen,
+        }}
+      >
         <MainLayout>
+          <DrawerButton />
           <PagesContainer>
             <SwipeableViews
               index={pageNumber}

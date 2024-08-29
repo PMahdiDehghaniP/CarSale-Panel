@@ -38,7 +38,7 @@ const Products = ({ pageTitle }) => {
         display="flex"
         justifyContent="center"
         width="100%"
-        sx={{ mt: 4, mb: 1 }}
+        sx={{ mt: 4, mb: 2 }}
       >
         <Box component="img" width="20%" src={Kia}></Box>
       </Box>

@@ -9,6 +9,7 @@ export const CheryCars = [
     torque: "390 نیوتن‌متر",
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "3/500/000/000",
     id: 1,
   },
   {
@@ -22,6 +23,7 @@ export const CheryCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 2,
+    price: "1/500/000/000",
   },
   {
     name: "آریزو 8 پرو",
@@ -34,6 +36,7 @@ export const CheryCars = [
     maxSpeed: "170 کیلومتر برساعت",
     engineBreather: "تنفس طبیعی",
     id: 3,
+    price: "2/000/000/000",
   },
   {
     name: "تیگو 5",
@@ -46,6 +49,7 @@ export const CheryCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 4,
+    price: "1/700/000/000",
   },
 
   {
@@ -59,6 +63,7 @@ export const CheryCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 5,
+    price: "2/500/000/000",
   },
   {
     name: "آریزو 5",
@@ -71,6 +76,7 @@ export const CheryCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 6,
+    price: "1/200/000/000",
   },
 ];
 export const KmcCars = [
@@ -84,6 +90,7 @@ export const KmcCars = [
     torque: "390 نیوتن‌متر",
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "1/500/000/000",
     id: 1,
   },
   {
@@ -97,6 +104,7 @@ export const KmcCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 2,
+    price: "2/500/000/000",
   },
   {
     name: "KMC K7",
@@ -108,6 +116,7 @@ export const KmcCars = [
     torque: "251 نیوتن‌متر",
     maxSpeed: "170 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "1/800/000/000",
     id: 3,
   },
   {
@@ -120,6 +129,7 @@ export const KmcCars = [
     torque: "280 نیوتن‌متر",
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "1/500/000/000",
     id: 4,
   },
 
@@ -134,6 +144,7 @@ export const KmcCars = [
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
     id: 5,
+    price: "3/000/000/000",
   },
 ];
 
@@ -148,6 +159,7 @@ export const KiaCars = [
     torque: "254 نیوتن‌متر",
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "5/500/000/000",
     id: 1,
   },
   {
@@ -160,6 +172,7 @@ export const KiaCars = [
     torque: "290 نیوتن‌متر",
     maxSpeed: "210 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "3/500/000/000",
     id: 2,
   },
   {
@@ -172,6 +185,7 @@ export const KiaCars = [
     torque: "200 نیوتن‌متر",
     maxSpeed: "170 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "3/000/000/000",
     id: 3,
   },
   {
@@ -184,6 +198,7 @@ export const KiaCars = [
     torque: "137 نیوتن‌متر",
     maxSpeed: "170 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "800/000/000",
     id: 4,
   },
 
@@ -197,6 +212,7 @@ export const KiaCars = [
     torque: "227 نیوتن‌متر",
     maxSpeed: "180 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "2/500/000/000",
     id: 5,
   },
   {
@@ -208,6 +224,7 @@ export const KiaCars = [
     torque: "338 نیوتن‌متر",
     maxSpeed: "230 کیلومتر برساعت",
     engineBreather: "توربو شارژ",
+    price: "4/500/000/000",
     id: 6,
   },
 ];
