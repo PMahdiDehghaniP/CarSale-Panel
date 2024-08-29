@@ -1,4 +1,3 @@
-import "./App.css";
 import MainLayout from "./layouts/MainLayout";
 import SideBarContainer from "./containers/SideBarContainer";
 import PagesContainer from "./containers/PagesContainer";
@@ -14,9 +13,6 @@ const App = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const handlePageNumberChange = (event, newPageNumber) => {
     setPageNumber(newPageNumber);
-  };
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
   };
   return (
     <>
