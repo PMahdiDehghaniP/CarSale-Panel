@@ -14,6 +14,9 @@ const App = () => {
   const handlePageNumberChange = (event, newPageNumber) => {
     setPageNumber(newPageNumber);
   };
+  const handleSwipeChange = (index) => {
+    setPageNumber(index);
+  };
   return (
     <>
       <projectContext.Provider
@@ -29,7 +32,7 @@ const App = () => {
           <PagesContainer>
             <SwipeableViews
               index={pageNumber}
-              onChangeIndex={handlePageNumberChange}
+              onChangeIndex={handleSwipeChange}
             >
               {tabsData.map((tabData) => (
                 <PageControler key={tabData.index} index={tabData.index}>

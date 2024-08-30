@@ -13,7 +13,9 @@ const TermOfSale = ({ pageTitle }) => {
   const handleCompanyChange = (event, newValue) => {
     setCarCompanyIndex(newValue);
   };
-
+  const handleSwipeCompanyChange = (index) => {
+    setCarCompanyIndex(index);
+  };
   return (
     <>
       <Helmet>
@@ -96,7 +98,7 @@ const TermOfSale = ({ pageTitle }) => {
           </Tabs>
           <SwipeableViews
             index={carCompanyIndex}
-            onChangeIndex={handleCompanyChange}
+            onChangeIndex={handleSwipeCompanyChange}
           >
             <SaleCardTabPanel value={carCompanyIndex} index={0}>
               {KmcCars.map((Car) => (
